@@ -1,8 +1,11 @@
-# React + Vite
+# React + Vite + TanStack => Infinite Scroll
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This template provides a exercise of Infinite Scroll of React Query:
+React Query manages:
+1. pageParam - for next page to be fetched
+- getNextPageParam option
+- could be from last page, or all pages
+2. HasNextPage
+-boolean indicating whether pageParam is undefined
+3. Component handles calling fetchNextPage
+- use hasNextPage property value to determine when to stop
